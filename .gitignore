@@ -88,3 +88,8 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+
+# ignore ALL .log files
+*.log
+# ignore ALL files in ANY directory named temp
+temp/
