@@ -8,6 +8,11 @@ import musicLibrary
 
 recognizer = sr.Recognizer()
 engine = pyttsx3.init()
+voices = engine.getProperty('voices')       #getting details of current voice
+#engine.setProperty('voice', voices[0].id)  #changing index, changes voices. o for male
+engine.setProperty('voice', voices[1].id)   #changing index, changes voices. 1 for female
+
+aiName = "jarvis"
 
 def speak(text):
     engine.say(text)
@@ -29,6 +34,8 @@ def processCommand(c):
         webbrowser.open("https://www.facebook.com")
     elif "open github" in c.lower():
         webbrowser.open("https://github.com/")
+    elif "open media" in c.lower():
+        webbrowser.open("file:///D:/Media/")
     elif "play" in c.lower():
         song = c.lower().split(" ")[1]
         link = musicLibrary.music[song]
@@ -52,7 +59,7 @@ if __name__ == '__main__':
                 print("Please say something:")
                 audio = r.listen(source,timeout=2,phrase_time_limit=1)
             word = r.recognize_google(audio)
-            if ("hello" in word.lower()): 
+            if (aiName in word.lower()): 
                 speak("Hey Boss!")
                 # Listen foe command
                 with sr.Microphone() as source:
@@ -65,4 +72,3 @@ if __name__ == '__main__':
                     
         except Exception as e:
             print("Error; {0}".format(e))
-            
