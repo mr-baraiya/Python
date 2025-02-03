@@ -8,10 +8,10 @@ This repository serves as a collection of Python programs written for different 
 ## 📂 Structure
 The repository is organized as follows:
 ```
-/lab-manual-1/
+/Lab-1/
     - program1.py
     - program2.py
-/lab-manual-2/
+/Lab-2/
     - program1.py
     - program2.py
 ...
