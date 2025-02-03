@@ -25,11 +25,11 @@ Each folder corresponds to a specific lab manual, and each Python file within co
 ## 🚀 How to Use
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/your-repo.git
+   git clone https://github.com/mr-baraiya/Python.git
    ```
 2. Navigate to the required lab manual directory:
    ```sh
-   cd lab-manual-1
+   cd Lab-1
    ```
 3. Run the desired Python script:
    ```sh
