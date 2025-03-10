@@ -40,7 +40,7 @@ Each folder corresponds to a specific lab manual, and each Python file within co
 Feel free to contribute by adding more lab manual solutions or improving the existing ones. Open a pull request with your changes!
 
 ## 📧 Contact
-For any queries, reach out to [your email] or create an issue in the repository.
+For any queries, reach out to [baraiyavishalbhai32@gmail.com] or create an issue in the repository.
 
 Happy Coding! 🚀
 
